@@ -1,0 +1,14 @@
+{
+  "name": "curry-time",
+  "version": "1.0.0",
+  "description": "Orders them curries",
+  "main": "get-me-curry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Knox, Dion Woolley",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}
