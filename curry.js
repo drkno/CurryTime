@@ -1,4 +1,4 @@
-var command = require('./core/command.js');
+var commands = require('./core/command.js');
 
 var options = {
 	'show': {
@@ -39,4 +39,5 @@ var options = {
 	}
 };
 
-command.run(options, process.argv, 0);
+var command = commands.run(options, process.argv, 0);
+command.run();

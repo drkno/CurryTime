@@ -1,13 +1,15 @@
 var path = require('path'),
 	home = process.env.HOME || process.env.USERPROFILE,
-	configPath = path.join(home, '.curryconfig'),
+	configPath = path.join(home, '.curryconfig.json'),
 	config = null,
 	fs = require('fs');
 
 try {
+	console.log(configPath);
 	config = require(configPath);
 }
 catch (e) {
+	console.log(e);
 	config = {};
 }
 

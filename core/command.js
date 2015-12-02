@@ -39,5 +39,13 @@ exports.run = function (options, arguments, index) {
 		return help(options, arg);
 	}
 
-	return require(options[arg].file);
+	if (options[arg].file) {
+		return require(options[arg].file);
+	}
+	else if (options[arg].method) {
+		return options[arg].method();
+	}
+	else {
+		throw 'Unknown run type.';
+	}
 };
