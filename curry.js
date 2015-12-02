@@ -2,39 +2,39 @@ var command = require('./core/command.js');
 
 var options = {
 	'show': {
-		file: './core/show.js',
+		file: './show.js',
 		description: 'Shows a list of the avalible curries.'
 	},
 	'add': {
-		file: './core/add.js',
+		file: './add.js',
 		description: 'Adds a curry or other item to your current order.'
 	},
 	'modify': {
-		file: './core/modify.js',
+		file: './modify.js',
 		description: 'Modifies the last order.'
 	},
 	'remove': {
-		file: './core/remove.js',
+		file: './remove.js',
 		description: 'Removes an item from your current order.'
 	},
 	'order': {
-		file: './core/order.js',
+		file: './order.js',
 		description: 'Places your order on the set remote.'
 	},
 	'status': {
-		file: './core/status.js',
+		file: './status.js',
 		description: 'Retreives the status of your current order.'
 	},
 	'tag': {
-		file: './core/tag.js',
+		file: './tag.js',
 		description: 'Tag as a favorite.'
 	},
 	'blame': {
-		file: './core/blame.js',
+		file: './blame.js',
 		description: 'Blames all the people who ordered a particular item.'
 	},
 	'config': {
-		file: './core/config.js',
+		file: './config.js',
 		description: 'Configures curry-time.'
 	}
 };
