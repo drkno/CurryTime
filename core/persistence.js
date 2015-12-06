@@ -5,11 +5,9 @@ var path = require('path'),
 	fs = require('fs');
 
 try {
-	console.log(configPath);
 	config = require(configPath);
 }
 catch (e) {
-	console.log(e);
 	config = {};
 }
 

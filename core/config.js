@@ -1,77 +1,47 @@
 var commands = require('./command.js'),
 	persistence = require('./persistence.js'),
-	mode = -1,
 	options = {
-		'curry': {
-			description: 'Adds a curry to your order.',
+		'remote': {
+			description: 'Gets or sets the remote provider of your curry.',
 			method: function() {
-				mode = 0;
+				if (process.argv.length > 5) {
+					help();
+				}
+				return ['remote', process.argv[4]];
 			}
 		},
-		'drink': {
-			description: 'Adds a drink to your order.',
+		'name': {
+			description: 'Gets or sets your name.',
 			method: function() {
-				mode = 1;
+				process.argv.splice(0, 4);
+				var name = process.argv.join(' ');
+				if (name.length > 0 && !name.trim()) {
+					help();
+				}
+				return ['name', name.trim()];
 			}
 		}
 	},
 
 help = function() {
 
-console.log('\n\
-,╓▄▄▄▄▓▓▓████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▄▄                \n\
-,▄▄▓██████▓▌▌▌▄▄▄▄▄╗m#R²╨╙^`````^²¥x▄,          ▀██▄              \n\
-▄▄██▀▀,▄æm╗▄▄,,    ,,,,▄▄æ#R²²╙╙╙╙²²¥k╦▄,  ▀k▄         ██▄            \n\
-╓▓█▓▀          ,,,   ...         ¬ⁿ²²²*xm╦▄▄▐▀¥▄ ▐▀▄       ▀██           \n\
-█▀       ▄R` .    .╙▀▀          ▀            ╙²w▄▀╦ ."-     ▀██          \n\
-▄█       Å           ▀          ▐                 %  ²        ▐█▓         \n\
-▄█▓           ,,,,     µ           ▄▄▓██▓███████▓▄              ╙██▄       \n\
-▄██▀         ▓█████████▓▄          ▓██▀   ,███████▓▓█▓  ╦,,     ≡m═w███▄     \n\
-▄██▀▄▀▀▀.      `▀▀▀▀▀▀██████▓█▓     ╙██▄▄▓██▀▀▀▀▌▀▀▀▀▀▀▀`:╛`. ,▄▄▄▄ ..`²▄▀█▌   \n\
-▓██╓▀╓ÆÑ,▄▄▄▄,             ▓█∩         ▀▀▀       ██▄,     ,▄▓██▓▀▀▀▀▀█▌,  ╙ ▀█▌ \n\
-██ ▌ ║ 4▓▀▀▀▀▀██▌▄▄▓µ      ▓█                     ╙▀▀▀▓▓▓▀▀▀▀   █▌    ╙█▌  } ╙█▓\n\
-▓█▐µ ▀     ▐█ └▀▀▀▀     ▄▓█▓▀         ╓▄▄▄▄ ═               ▄▄▓███▓▄   ▐█µ ╟  ██\n\
-██▓  ▀w  ╔██        ▄▓██▓          ,,  ▀▀█▌╙^^^^^¬   ,▄▄▓██▀▀. ╒████▓ ▓█  ▌  ██\n\
-██▌▀W▄ ╒███▓,  .æÉÑ ▀▀▀█▌       ▀█▀▀▓█ ▓█▀    ,▄▄▓█████▀.    ▄██    ▐█` ▄` ▓█▀\n\
-██▄   ▓██████▌▄,       ▀██▓█         ,▄▄▄▓▓██▀▀▀    ██Q,▄▄▓███▀     ,═É ▄██` \n\
-██   ████ ██▀▀███▓▓▄▄▄▄▄▄▄▄▄▄▄▓▓▓███▓▀▀▀█▌      ,▄█████▀▀██▀        «▓██`   \n\
-▐█µ  ███▌▐█▌  ▄█▌ ▐▀▀▀██▀▀▀▀└▐█▀        ██▄▄▓▓███████  ,██▀        ▄██      \n\
-▐█▌  ███████▓▌██▄▄▄▄▄▄██▄▄▄▄▄▄█▄,,▄▄▄▓▓███████▀▀   ██▄▓█▀         ▓█▀       \n\
-j█▌  ▀█████████████████████████████████▀▀██        ▄██▓          ▄█         \n\
-▐█    ██▓█████████████████████▓██▀╙      ▀█▌    ▄▓██▀           ▓█▀         \n\
-▓█    ▐████µ▀█▌  ██   ▀██      ▓█         ▀█▌▄▓██▀           ,▓█▀           \n\
-██     ╙███▌▄██▌ ╙██   ▐█µ     ▓█    ,▄▄▓▓███▀Ñ  ,xÆ^ ▄▄▀`,▄██▀             \n\
-█▌        ╙▀▀▀████████████████████████▀▀▀   ,▄Æ▀ ,▄#▀▀ ▄▄██▀.               \n\
-▐█▄   µ   X▄        .,▄▄▄▄▄,,▄▄,        ,▄#▀▀▄▄4▀▀└,▄▄██▀▀                   \n\
-╟█m   V    .▀▀W╦▄,,       ,   ,,╓wwmRÉ▀▌▄Æ▀▀   ▄▄▓██▀▀                       \n\
-╟█     .▀¥▄▄,             ,,,,═≡*²^`      ,▄▓██▀▀.                           \n\
-^██          .    .                   ,▄▓█▓▀.                                \n\
-▀█▌▄                      ,▄▄▓██████▀▀.                                    \n\
-▀▀██▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓▓███▀▀▀▀                                             \n\
-▀▀▀▀▀▀▀▀▀▀▀▀╙                                                       \n\
+console.log('\
+▄██████████████▄▐█▄▄▄▄█▌\n\
+██████▌▄▌▄▐▐▌███▌▀▀██▀▀\n\
+████▄█▌▄▌▄▐▐▌▀███▄▄█▌\n\
+▄▄▄▄▄██████████████▀\n\
 ');
 	console.log('What are you even trying to do?');
 	process.exit(-2);
 };
 
 exports.run = function() {
-	/*commands.run(options, process.argv, 1);
-	var item = process.argv[4];
-	switch (mode) {
-		case 0: if (!verifyCurry(item)) help(); break;
-		case 1: if (!verifyDrink(item)) help(); break;
-		default: help(); break;
+	var result = commands.run(options, process.argv, 1);
+	if (!result[1]) {
+		console.log(persistence.getKey(result[0]));
 	}
-
-	var stage = persistence.getKey('stage');
-	if (!stage) {
-		stage = {
-			date: new Date(),
-			items: []
-		};
+	else {
+		persistence.updateKey.apply(this, result);
+		console.log(result[0] + ' updated to \"' + result[1] + '".');
 	}
-
-	stage.items.push(item);
-	persistence.updateKey('stage', stage);*/
-	help();
 };

@@ -1,0 +1,1210 @@
+{
+    "options": [
+        {
+            "name": "Vegetable Samosa",
+            "description": "Deep Fried crisp pastry parcels stuffed with mixed vegetables.",
+            "in": 3,
+            "away": 2.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Lamb Samosa",
+            "description": "Deep Fried crisp pastry parcels stuffed with mixed vegetables, served with Tamarind chutney.",
+            "in": 3.2,
+            "away": 2.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Onion Bhajis",
+            "description": "Onion fritters lightly spiced in chickpea flour and deep fried. (7 pieces)",
+            "in": 6,
+            "away": 5.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Wada",
+            "description": "Mashed potato balls lightly spiced and fried. (6 pieces)",
+            "in": 6,
+            "away": 5.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Vegetable Pakora",
+            "description": "A selection of vegetables mildly spiced in chickpea flour and deep fried. Served with Tamarind chutney.",
+            "in": 6,
+            "away": 5.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Paneer Pakora",
+            "description": "Indian cottage cheese coated in a mildly spiced chickpea flour and deep fried. Served with Mint Chutney",
+            "in": 11.5,
+            "away": 10.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Amritsari Fish",
+            "description": "Fish fillets battered in slightly spiced gram flour and lemon juice, then deep fried. Served with Mint chutney. (5 pieces)",
+            "in": 14.5,
+            "away": 12.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Starter"
+        },
+        {
+            "name": "Tandoori Chicken (Half Chicken)",
+            "description": "Chicken marinated in special blend of yoghurt, herbs and spices and then roasted in tandoor.",
+            "in": 14,
+            "away": 12,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Tandoori Chicken (Full Chicken)",
+            "description": "Chicken marinated in special blend of yoghurt, herbs and spices and then roasted in tandoor.",
+            "in": 22,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Murg Malai Kebab",
+            "description": "Chicken battered in cashew paste, cream cheese with chickpea flour, curd and cooked in tandoor. (6 pieces)",
+            "in": 14,
+            "away": 12,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Hariyali Chicken Tikka",
+            "description": "Boneless chicken marinated in coriander mint sauce and cooked in tandoor. (6 pieces)",
+            "in": 14.5,
+            "away": 12.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Chicken Tikka",
+            "description": "Boneless chicken marinated overnight in yoghurt and spices then skewered and cooked in tandoor. (6 pieces)",
+            "in": 14,
+            "away": 12,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Lamb Seekh Kebab",
+            "description": "Minced lamb cooked on skewers marinated with ginger, garlic, onion, coriander leaves and smoked in tandoor. (6 pieces)",
+            "in": 15,
+            "away": 13,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Lamb Chops",
+            "description": "",
+            "in": -1,
+            "away": 15,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Lamb Botti Kebab",
+            "description": "Fresh ginger flavoured young lamb cutlets marinated in yogurt and tandoori masala roasted in Tandoor. (5 pieces)",
+            "in": 16,
+            "away": -1,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Fish Tikka",
+            "description": "Fish marinated in spices and yogurt, then cooked on a skewer in tandoor. (6 pieces)",
+            "in": 15,
+            "away": 13,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Tandoori Prawn",
+            "description": "Prawns battered in lightly spiced chickpea flour and roasted in Tandoor. Served with chutney. (6 pieces)",
+            "in": 16,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Garlic Prawn",
+            "description": "Prawns marinated with herbs and spices and then roasted in tandoor oven with a hint of lemon. (6 pieces)",
+            "in": 16,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "From Our Tandoor"
+        },
+        {
+            "name": "Pepper Bridge Vegetarian Platter: Vegetable Samosa",
+            "description": "For two",
+            "in": 16,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Vegetarian Platter: Onion Bhaji",
+            "description": "For two",
+            "in": 16,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Vegetarian Platter: Mix Vegetable Pakora",
+            "description": "For two",
+            "in": 16,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Vegetarian Platter: Paneer Pakora",
+            "description": "For two",
+            "in": 16,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Tandoori: Tandoori Chicken quarter",
+            "description": "For two",
+            "in": 22,
+            "away": 19.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Tandoori: Murg Malai Kebab",
+            "description": "For two",
+            "in": 22,
+            "away": 19.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Tandoori: Lamb Botti Kebab",
+            "description": "For two",
+            "in": 22,
+            "away": 19.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Tandoori: Amritsari Fish",
+            "description": "For two",
+            "in": 22,
+            "away": 19.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Tandoori: Lamb Seekh Kebab",
+            "description": "For two",
+            "in": 22,
+            "away": 19.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge Tandoori: Hariyali Chicken Tikka",
+            "description": "For two",
+            "in": 22,
+            "away": 19.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Vegetable Samosa",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Onion Bhaji",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Vegetable Pakora",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Tandoori Chicken quarter",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Chicken Tikka",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Lamb Seekh Kebab",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Pepper Bridge mixed Platter: Amritsari Fish.",
+            "description": "For two",
+            "in": 23,
+            "away": 20,
+            "ls": 0,
+            "sd": 0,
+            "type": "Platter"
+        },
+        {
+            "name": "Butter Chicken",
+            "description": "Marinated chicken roasted in tandoor and cooked in creamy butter masala sauce.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Korma",
+            "description": "Chicken pieces cooked in rich cashew and coconut cream sauce.",
+            "in": 15,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Tikka Masala",
+            "description": "Chicken Tikka cooked in tandoor and finished in tomato, capsicum and onion sauce.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Mango Chicken",
+            "description": "Tender diced chicken prepared with cashew gravy and simmered with mango sauce..",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Kadai",
+            "description": "Chicken pieces fried in kadai and cooked with crushed ginger and garlic, tomatoes, capsicum and spices and finished with fresh coriander.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Saag",
+            "description": "Chicken cubes cooked in fresh spinach blended with herbs and spices.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Madras",
+            "description": "Chicken cooked in spicy masala sauce.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Vindaloo",
+            "description": "A hot dish it is cooked with vinegar, potatoes and spices.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Bhuna",
+            "description": "Pan fried chicken, onion and tomatoes finished with a thick spicy sauce.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Balti",
+            "description": "Chicken pieces cooked in onion, yoghurt, spices and finished with coriander.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken JalFrezee",
+            "description": "Boneless cubes of chicken cooked with green capsicum, coconut milk, tomatoes, spring onions and spices.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Badam Pasanda",
+            "description": "Chicken breasts that are tenderised in yoghurt, cumin, peppercorns, and garam masala, then cooked in the creamy pasanda sauce made with almonds.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Do-Pyaza",
+            "description": "Tender pieces of chicken roasted in a spicy onion tomato masala topped with ginger, garlic and spices.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chicken Lajawab",
+            "description": "Marinated chicken pieces cooked with ginger garlic paste, tomato puree, spices and finished with coriander.",
+            "in": 16.5,
+            "away": 15,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Chilli Chicken",
+            "description": "Boneless chicken cubes marinated with spices and deep-fried, further cooked with capsicum, onion, garlic and a blend of soya sauce, chili sauce and vinegar. These Tender bites taste mildly hot, sweet and sour.",
+            "in": 17,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Chicken"
+        },
+        {
+            "name": "Lamb Korma",
+            "description": "Lamb pieces cooked in rich cashew and coconut cream sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Kadai",
+            "description": "Lamb pieces fried in a kadai and cooked with tomatoes, onion, crushed ginger, garlic , spices and finishes with fresh coriander..",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Saag",
+            "description": "Lamb cubes cooked in fresh spinach blended with herbs and spices.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Madras",
+            "description": "Lamb pieces cooked in spicy masala sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Makhani",
+            "description": "Marinated lamb pieces roasted in tandoor and cooked in creamy butter masala sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Tikka Masala",
+            "description": "Lamb pieces cooked in tandoor and finished in tomato, capsicum and onion sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Badam Pasanda",
+            "description": "Lamb pieces tenderised in yoghurt, cumin, peppercorns, and garam masala, then cooked in the creamy pasanda sauce made with almonds",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Rogan Josh",
+            "description": "Lamb pieces cooked with roasted crushed spices, tomatoes and onions.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Lajawab",
+            "description": "Marinated lamb pieces cooked with ginger garlic paste, tomato puree, spices and finished with coriander.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Bhuna",
+            "description": "Pan fried lamb, onion and tomatoes finished with a thick spicy sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Handi",
+            "description": "Lamb cubes stirred in with assorted masalas, yogurt and cream.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Do-Pyaza",
+            "description": "Tender pieces of lamb roasted in a spicy onion tomato masala topped with ginger, garlic and spices.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Balti",
+            "description": "Lamb pieces cooked in yoghurt, coriander and spices.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Lamb Vindaloo",
+            "description": "Lamb pieces cooked with vinegar, potatoes and spices.",
+            "in": 18,
+            "away": 16,
+            "ls": 1,
+            "sd": 1,
+            "type": "Lamb"
+        },
+        {
+            "name": "Beef Rogan Josh",
+            "description": "Beef pieces cooked with roasted crushed spices, tomatoes and onions.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Madras",
+            "description": "Beef pieces cooked in spicy masala sauce.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Do-Pyaza",
+            "description": "Tender pieces of beef roasted in a spicy onion tomato masala topped with ginger, spices.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Lajawab",
+            "description": "Marinated beef pieces cooked with ginger garlic paste, tomato puree, spices and finished with coriander.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Bhuna",
+            "description": "Pan fried beef, onion and tomatoes finished with a thick spicy sauce",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Korma",
+            "description": "Beef pieces cooked in rich cashew and coconut cream sauce.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Kadai",
+            "description": "Beef pieces fried in a kadai and cooked with tomatoes, onion, crushed ginger, garlic , spices and finishes with fresh coriander.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Saag",
+            "description": "Beef cubes cooked in fresh spinach blended with herbs and spices.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Beef Vindaloo",
+            "description": "Beef pieces cooked with vinegar, potatoes and spices.",
+            "in": 17.5,
+            "away": 15.5,
+            "ls": 1,
+            "sd": 1,
+            "type": "Beef"
+        },
+        {
+            "name": "Fish Tikka Masala",
+            "description": "Marinated fish fillets grilled on skewers and cooked in tikka masala sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 0,
+            "sd": 0,
+            "type": "Sea Food"
+        },
+        {
+            "name": "Fish Curry",
+            "description": "Spicy baked fish fillets are dressed up with a ginger, garlic, onion, and cashew puree.",
+            "in": 18.5,
+            "away": 15.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Sea Food"
+        },
+        {
+            "name": "Goan fish Curry",
+            "description": "Firm fish pieces cooked in coconut milk, chopped tomatoes and spices.",
+            "in": 18,
+            "away": 16,
+            "ls": 0,
+            "sd": 0,
+            "type": "Sea Food"
+        },
+        {
+            "name": "Prawn Malabari",
+            "description": "Prawns cooked with ginger, garlic, vinegar, green capsicum a selection of spices and with a splash of cream.",
+            "in": 18,
+            "away": 16,
+            "ls": 0,
+            "sd": 0,
+            "type": "Sea Food"
+        },
+        {
+            "name": "Prawn kadai",
+            "description": "Prawns fried in a kadai and cooked with tomatoes, onion, crushed ginger, garlic , spices and finishes with fresh coriander.",
+            "in": 18,
+            "away": 16,
+            "ls": 0,
+            "sd": 0,
+            "type": "Sea Food"
+        },
+        {
+            "name": "Butter Prawns",
+            "description": "Marinated king prawns roasted in tandoor and cooked in creamy butter masala sauce.",
+            "in": 18,
+            "away": 16,
+            "ls": 0,
+            "sd": 0,
+            "type": "Sea Food"
+        },
+        {
+            "name": "Aloo (potato) Saag",
+            "description": "Potatoes cooked in fresh spinach, spices and cream.",
+            "in": 14.5,
+            "away": 13,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Navaratam Korma (Vegetable Korma)",
+            "description": "Vegetables cooked in mild sweet creamy sauce and spices.",
+            "in": 15,
+            "away": 13.5,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Aloo Gobi",
+            "description": "Stir-fried potatoes and cauliflower cooked with tomatoes, onions, and ginger.",
+            "in": 14.5,
+            "away": 13,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Dal Makhani",
+            "description": "Black lentil and kidney bean cooked in creamy tomato and butter sauce.",
+            "in": 14.5,
+            "away": 13.5,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Malai Kofta",
+            "description": "Potatoes and home made cottage cheese mixed with herbs, spices and simmered with cream cheese.",
+            "in": 15.5,
+            "away": 14,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Paneer makhani",
+            "description": "Home made cottage cheese cooked in creamy tomato and butter sauce.",
+            "in": 15.5,
+            "away": 14,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Palak Paneer",
+            "description": "Home made cottage cheese cooked with fresh spinach, ginger and ground spices.",
+            "in": 15.5,
+            "away": 14,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Kadai Paner",
+            "description": "Cottage cheese cooked with ginger-garlic curry sauce, fresh tomatoes, capsicum and onions.",
+            "in": 15.5,
+            "away": 14,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Matar Paneer",
+            "description": "Cottage cheese cooked with fresh peas in creamy tomato and butter sauce.",
+            "in": 15.5,
+            "away": 14,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Mushroom Matar",
+            "description": "Mushroom and fresh peas cooked with garlic, cream and spices.",
+            "in": 15,
+            "away": 14,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Vegetable Jaypuri",
+            "description": "Mixed vegetables cooked with ground spices, cream and tint of saffron.",
+            "in": 14.5,
+            "away": 13,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Vegetable Makhani",
+            "description": "Mixed vegetables cooked in creamy tomato and butter sauce.",
+            "in": 14.5,
+            "away": 13,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Chilli Paneer",
+            "description": "Cottage cheese marinated with spices and deep-fried, further cooked with capsicum, onion, garlic, and a blend of soya sauce, chili sauce and vinegar.",
+            "in": 16,
+            "away": 14.5,
+            "ls": 0,
+            "sd": 1,
+            "type": "Vegetarian"
+        },
+        {
+            "name": "Vegetable Biriyani",
+            "description": "",
+            "in": 14,
+            "away": 13,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Lamb Biriyani",
+            "description": "",
+            "in": 18,
+            "away": 16,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Chicken Biriyani",
+            "description": "",
+            "in": 17,
+            "away": 14,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Beef Biriyani",
+            "description": "",
+            "in": 17,
+            "away": 15,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Prawn Biriyani",
+            "description": "",
+            "in": 19,
+            "away": 17,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Peas Pulao",
+            "description": "Basmati rice cooked with peas and spices.",
+            "in": 6.5,
+            "away": 5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Kashmiri Pulao",
+            "description": "Basmati rice prepared with dry fruits, nuts and fresh fruits.",
+            "in": 6.5,
+            "away": 5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Rice"
+        },
+        {
+            "name": "Basmati Rice",
+            "description": "Premium Indian rice",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 1,
+            "type": "Rice"
+        },
+        {
+            "name": "Masala Dosa",
+            "description": "Dosa stuffed with potatoes, onions, curry leaves, mustard seeds and mild spices.",
+            "in": 11,
+            "away": 10,
+            "ls": 0,
+            "sd": 0,
+            "type": "Dosa"
+        },
+        {
+            "name": "Ghee roast",
+            "description": "Light crispy dosa sprinkled with home Ghee.",
+            "in": 9,
+            "away": 8,
+            "ls": 0,
+            "sd": 0,
+            "type": "Dosa"
+        },
+        {
+            "name": "Egg Dosa",
+            "description": "Dosa layered with egg and seasoning.",
+            "in": 11,
+            "away": 10,
+            "ls": 0,
+            "sd": 0,
+            "type": "Dosa"
+        },
+        {
+            "name": "Onion Dosa",
+            "description": "Dosa topped with chopped red onion and tomato.",
+            "in": 10,
+            "away": 9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Dosa"
+        },
+        {
+            "name": "Mysore Dosa",
+            "description": "Dosa layered with tomato chutney and stuffed with potatoes, onion and mild masala.",
+            "in": -1,
+            "away": 10,
+            "ls": 0,
+            "sd": 0,
+            "type": "Dosa"
+        },
+        {
+            "name": "Plain Naan",
+            "description": "Traditional leavened bread baked in the tandoor.",
+            "in": 3,
+            "away": 2.5,
+            "ls": 1,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Butter Naan",
+            "description": "Traditional leavened bread baked in tandoor and finished with butter.",
+            "in": 3.5,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Cheese Naan",
+            "description": "Naan stuffed with cheese.",
+            "in": 4,
+            "away": 4,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Garlic & Cheese Naan",
+            "description": "Traditional leavened bread stuffed with cheese and sprinkling of garlic.",
+            "in": 4.5,
+            "away": 3.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Choclate Naan",
+            "description": "Leavened bread stuffed with chocolate",
+            "in": 5,
+            "away": -1,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Onion Kulcha",
+            "description": "Leavened bread stuffed with onions and spices.",
+            "in": 4.5,
+            "away": 3.9,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Aloo Paratha",
+            "description": "Whole-wheat flatbread stuffed with mashed potatoes and spices.",
+            "in": 4.5,
+            "away": 4,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Keema Naan",
+            "description": "Naan with mildly spiced minced lamb.",
+            "in": 5,
+            "away": 4.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Chicken Naan",
+            "description": "Naan bread stuffed with minced chicken.",
+            "in": 5,
+            "away": 4.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Kashmiri Naan",
+            "description": "Naan Topped with nuts and sultanas.",
+            "in": 4.5,
+            "away": 4,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Tandoori Roti",
+            "description": "Traditional crispy bread made from wholemeal flour.",
+            "in": 3,
+            "away": 3,
+            "ls": 0,
+            "sd": 0,
+            "type": "Bread"
+        },
+        {
+            "name": "Papadoms",
+            "description": "",
+            "in": 2,
+            "away": 2,
+            "ls": 1,
+            "sd": 1,
+            "type": "Side"
+        },
+        {
+            "name": "Rita",
+            "description": "Yoghurt mixed with carrot, tomato and cucumber.",
+            "in": 3,
+            "away": 3,
+            "ls": 0,
+            "sd": 0,
+            "type": "Side"
+        },
+        {
+            "name": "Mint Chutney",
+            "description": "",
+            "in": 2.5,
+            "away": 2.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Side"
+        },
+        {
+            "name": "Mango Chutney",
+            "description": "",
+            "in": 2.5,
+            "away": 2.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Side"
+        },
+        {
+            "name": "Mixed Pickle",
+            "description": "",
+            "in": 2.5,
+            "away": 2.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Side"
+        },
+        {
+            "name": "Kechumber",
+            "description": "Diced onions, cucumber, tomatoes and coriander with touch of lemon juice and spices.",
+            "in": 4,
+            "away": 4,
+            "ls": 0,
+            "sd": 0,
+            "type": "Side"
+        },
+        {
+            "name": "Green Salad",
+            "description": "",
+            "in": 5,
+            "away": 5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Side"
+        },
+        {
+            "name": "Masala Tea",
+            "description": "",
+            "in": 3,
+            "away": 3,
+            "ls": 0,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Mango Lassi",
+            "description": "",
+            "in": 4,
+            "away": 4,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Coke",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Sprite",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Fanta",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "L&P",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Pepsi",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Lift",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Mountain Dew",
+            "description": "A sugary drink that is very bad for your teeth.",
+            "in": 3,
+            "away": 3,
+            "ls": 1,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Ginger Beer",
+            "description": "",
+            "in": 3.5,
+            "away": 3.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Drink"
+        },
+        {
+            "name": "Lemon Lime and Bitter",
+            "description": "",
+            "in": 3.5,
+            "away": 3.5,
+            "ls": 0,
+            "sd": 0,
+            "type": "Drink"
+        }
+    ]
+}
