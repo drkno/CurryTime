@@ -26,7 +26,18 @@ exports.run = function() {
 				cost += currentOrder.items[i][location].toFixed(2);
 			}
 
-			var name = currentOrder.items[i].name;
+			var stren = '';
+			if (currentOrder.items[i].strength) {
+				stren = ' ' + currentOrder.items[i].strength + ' ';
+				switch(currentOrder.items[i].strength) {
+					case 'Mild': stren = stren.green.inverse; break;
+					case 'Medium': stren = stren.yellow.inverse; break;
+					case 'Hot': stren = stren.red.inverse; break;
+				}
+				stren = ' ' + stren;
+			}
+
+			var name = currentOrder.items[i].name + stren;
 			console.log(cost + '\t| ' + name);
 		}
 
@@ -43,6 +54,9 @@ exports.run = function() {
 		console.log('------------------------------------------------');
 		console.log('Total'.bold.cyan + '\t| ' + '$'.cyan + total.toFixed(2).cyan);
 		console.log('------------------------------------------------');
+	}
+	else {
+		console.log('No items currenly added for a new order.');
 	}
 
 };

@@ -2,6 +2,7 @@ var commands = require('./command.js'),
 	persistence = require('./persistence.js'),
 	specials = require('./specials.js'),
 	items = require('./curries.json'),
+	strength = require('./strength.js'),
 	options = {
 		'item': {
 			description: 'Adds an item to your order.',
@@ -65,8 +66,10 @@ exports.run = function() {
 
 	switch (mode) {
 		case 0: {
-			var add = verify(item);
+			var s = strength.extract(item);
+			var add = verify(s[0]);
 			if (!add) help();
+			add.strength = strength.run(s[1]);
 			stage.items.push(add);
 			break;
 		}

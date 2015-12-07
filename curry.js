@@ -13,17 +13,21 @@ var options = {
 		file: './add.js',
 		description: 'Adds a curry or other item to your current order.'
 	},
-	'modify': {
-		file: './modify.js',
-		description: 'Modifies the last submitted order.'
-	},
 	'remove': {
 		file: './remove.js',
 		description: 'Removes an item from your current order.'
 	},
+	'modify': {
+		file: './modify.js',
+		description: 'Modifies the last submitted order.'
+	},
 	'order': {
 		file: './order.js',
 		description: 'Places your order on the set remote.'
+	},
+	'reset': {
+		file: './reset.js',
+		description: 'Resets all the items in your current unsubmitted order.'
 	},
 	'status': {
 		file: './status.js',

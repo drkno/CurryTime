@@ -1,5 +1,6 @@
 var readlineSync = require('readline-sync'),
 	persistence = require('./persistence.js'),
+	strength = require('./strength.js'),
 	items = require('./curries.json');
 
 var find = function (curry) {
@@ -53,6 +54,8 @@ var lunchSpecial = function() {
 			console.log("That curry isn't in the special or I've never heard of it before!");
 			process.exit(-3);
 		}
+		var stren = readlineSync.question('How strong should the curry be?');
+		curry.strength = strength.run(stren);
 		currentOrder.items.push(curry);
 	}
 
