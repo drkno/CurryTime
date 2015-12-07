@@ -9,7 +9,7 @@ filter = function (curry) {
 		res = [];
 
 	for (var i = 0; i < items.length; i++) {
-		if (items[i].name.toLowerCase().indexOf(name) >= 0) {
+		if (items[i].name.toLowerCase().indexOf(name) >= 0 || items[i].type.toLowerCase().indexOf(name) >= 0) {
 			res.push(items[i]);
 		}
 	}
@@ -17,6 +17,8 @@ filter = function (curry) {
 };
 
 exports.run = function() {
+	console.log(figlet.textSync('Items', 'Graffiti').cyan);
+
 	process.argv.splice(0, 3);
 	var desc = process.argv.indexOf('--description');
 	if (desc >= 0) {
@@ -32,11 +34,28 @@ exports.run = function() {
 		k = 'away';
 	}
 
+	console.log('------------------------------------------------');
+	console.log('Cost'.bold + '\t| ' + 'Item'.bold);
+	console.log('------------------------------------------------');
+	if (items.length === 0) {
+		console.log('No items found for query.'.red);
+	}
 	for (var i = 0; i < items.length; i++) {
 		if (items[i][k] === -1) {
 			continue;
 		}
-		console.log('$' + items[i][k].toFixed(2) + '\t' + items[i].name + (desc >= 0 ? '\n' + items[i].description + '\n' : ''));
+		var d = '';
+		if (desc >= 0) {
+			d = '\n' + items[i].description + '\n------------------------------------------------';
+		}
+
+		var text = '$' + items[i][k].toFixed(2) + '\t| ' + items[i].name + d;
+		if (i % 2) {
+			console.log(text.gray);
+		}
+		else {
+			console.log(text.white);
+		}
 	}
 	console.log('');
 

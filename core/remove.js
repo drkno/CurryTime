@@ -24,7 +24,11 @@ console.log("\n\
 
 	var stage = persistence.getKey('stage');
 	for (var i = 0; i < stage.items.length; i++) {
-		console.log('-\t' + stage.items[i].name);
+		var sp = '';
+		if (!isNaN(stage.items[i].special)) {
+			sp = '[' + stage.specials[stage.items[i].special].name + '] ';
+		}
+		console.log('-\t' + sp.yellow + stage.items[i].name);
 	}
 
 	process.exit(-2);
@@ -37,6 +41,19 @@ verify = function (curry) {
 			return element.name.toLowerCase() === name;
 		});
 	return i;
+},
+
+removeSpecial = function(stage, special) {
+	console.log('NOTE'.yellow + ': By removing this item you have removed the special "' + stage.specials[special].name.cyan + '"');
+	for (var i = 0; i < stage.items.length; i++) {
+		if (stage.items[i].special === special) {
+			delete stage.items[i].special;
+		}
+	}
+	delete stage.specials[special];
+	if (Object.keys(stage.specials).length === 1) {
+		delete stage.specials;
+	}
 };
 
 exports.run = function() {
@@ -65,6 +82,10 @@ exports.run = function() {
 	}
 	if (remove === -1) {
 		help();
+	}
+
+	if (!isNaN(stage.items[remove].special)){
+		removeSpecial(stage, stage.items[remove].special);
 	}
 
 	stage.items.splice(remove, 1);

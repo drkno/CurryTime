@@ -2,18 +2,17 @@ var commands = require('./command.js'),
 	persistence = require('./persistence.js'),
 	specials = require('./specials.js'),
 	items = require('./curries.json'),
-	mode = -1,
 	options = {
 		'item': {
 			description: 'Adds an item to your order.',
 			method: function() {
-				mode = 0;
+				return 0;
 			}
 		},
 		'special': {
 			description: 'Adds a special to your order.',
 			method: function() {
-
+				return 1;
 			}
 		}
 	},
@@ -32,9 +31,9 @@ console.log("\n\
          |\n\
      _.-' '-._\n\
     `---------`\n\
-");
-	console.log('Coming Soon: ability to predict orders and translate jibberish.');
-	console.log('In the mean time please just tell us what you want.');
+".green);
+	console.log('Coming Soon: ability to predict orders and translate jibberish.'.red);
+	console.log('In the mean time please just ' + 'tell us'.underline + ' what you want.');
 	process.exit(-2);
 },
 
@@ -48,7 +47,7 @@ verify = function (curry) {
 };
 
 exports.run = function() {
-	commands.run(options, process.argv, 1);
+	var mode = commands.run(options, process.argv, 1);
 	process.argv.splice(0, 4);
 	var item = process.argv.join(' ');
 	if (item.length > 0 && !item.trim()) {
@@ -69,6 +68,10 @@ exports.run = function() {
 			var add = verify(item);
 			if (!add) help();
 			stage.items.push(add);
+			break;
+		}
+		case 1: {
+			specials.run(item);
 			break;
 		}
 		default: help(); break;

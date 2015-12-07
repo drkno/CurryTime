@@ -1,6 +1,9 @@
 var commands = require('./core/command.js'),
 	prototypes = require('./core/prototypes.js');
 
+global.colors = require('colors');
+global.figlet = require('figlet');
+
 var options = {
 	'show': {
 		file: './show.js',
@@ -12,7 +15,7 @@ var options = {
 	},
 	'modify': {
 		file: './modify.js',
-		description: 'Modifies the last order.'
+		description: 'Modifies the last submitted order.'
 	},
 	'remove': {
 		file: './remove.js',

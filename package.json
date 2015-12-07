@@ -9,6 +9,9 @@
   "author": "Matthew Knox, Dion Woolley",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
+    "figlet": "^1.1.1",
+    "readline-sync": "^1.2.21",
     "request": "^2.67.0"
   }
 }

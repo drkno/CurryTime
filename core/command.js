@@ -10,17 +10,17 @@ console.log("\
  \\_____\\__,_|_|  |_|   \\__, |_|  |_|_| |_| |_|\\___|\n\
                         __/ |                      \n\
                        |___/                       \n\
-");
+".red);
 },
 
 help = function(options, arg) {
 	banner();
 
 	if (!arg) {
-		console.log('An option must be specified.');
+		console.log('An option must be specified.'.bold);
 	}
 	else {
-		console.log('"' + arg + '" is not a valid option.');
+		console.log('"' + arg.bold + '" is not a valid option.');
 	}
 
 	console.log("Avalible arguments are:");

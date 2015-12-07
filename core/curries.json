@@ -322,7 +322,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Korma",
@@ -331,7 +331,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Tikka Masala",
@@ -340,7 +340,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Mango Chicken",
@@ -349,7 +349,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Kadai",
@@ -358,7 +358,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Saag",
@@ -367,7 +367,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Madras",
@@ -376,7 +376,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Vindaloo",
@@ -385,7 +385,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Bhuna",
@@ -394,7 +394,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Balti",
@@ -403,7 +403,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken JalFrezee",
@@ -412,7 +412,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Badam Pasanda",
@@ -421,7 +421,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Do-Pyaza",
@@ -430,7 +430,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chicken Lajawab",
@@ -439,7 +439,7 @@
             "away": 15,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Chilli Chicken",
@@ -448,7 +448,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Chicken"
+            "type": "Chicken Curry"
         },
         {
             "name": "Lamb Korma",
@@ -457,7 +457,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Kadai",
@@ -466,7 +466,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Saag",
@@ -475,7 +475,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Madras",
@@ -484,7 +484,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Makhani",
@@ -493,7 +493,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Tikka Masala",
@@ -502,7 +502,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Badam Pasanda",
@@ -511,7 +511,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Rogan Josh",
@@ -520,7 +520,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Lajawab",
@@ -529,7 +529,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Bhuna",
@@ -538,7 +538,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Handi",
@@ -547,7 +547,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Do-Pyaza",
@@ -556,7 +556,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Balti",
@@ -565,7 +565,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Lamb Vindaloo",
@@ -574,7 +574,7 @@
             "away": 16,
             "ls": 1,
             "sd": 1,
-            "type": "Lamb"
+            "type": "Lamb Curry"
         },
         {
             "name": "Beef Rogan Josh",
@@ -583,7 +583,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Madras",
@@ -592,7 +592,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Do-Pyaza",
@@ -601,7 +601,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Lajawab",
@@ -610,7 +610,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Bhuna",
@@ -619,7 +619,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Korma",
@@ -628,7 +628,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Kadai",
@@ -637,7 +637,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Saag",
@@ -646,7 +646,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Beef Vindaloo",
@@ -655,7 +655,7 @@
             "away": 15.5,
             "ls": 1,
             "sd": 1,
-            "type": "Beef"
+            "type": "Beef Curry"
         },
         {
             "name": "Fish Tikka Masala",

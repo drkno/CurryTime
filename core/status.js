@@ -1,14 +1,7 @@
 var persistence = require('./persistence.js');
 
 exports.run = function() {
-	console.log("\n\
-________            .___            \n\
-\\_____  \\_______  __| _/___________ \n\
- /   |   \\_  __ \\/ __ |/ __ \\_  __ \\\n\
-/    |    \\  | \\/ /_/ \\  ___/|  | \\/\n\
-\\_______  /__|  \\____ |\\___  >__|   \n\
-        \\/           \\/    \\/       \n\
-");
+	console.log(figlet.textSync('Order', 'Graffiti').red);
 
 	var location = persistence.getKey('location');
 	if (!location) {
@@ -19,19 +12,36 @@ ________            .___            \n\
 	if (currentOrder && currentOrder.items.length > 0) {
 		console.log('Current Unsubmitted Order');
 		console.log('------------------------------------------------');
-		console.log('Cost\t| Item');
+		console.log('Cost'.bold + '\t| ' + 'Item'.bold);
 		console.log('------------------------------------------------');
 
 		var total = 0;
 		for (var i = 0; i < currentOrder.items.length; i++) {
-			total += currentOrder.items[i][location];
-			var cost = '$' + currentOrder.items[i][location].toFixed(2);
+			var cost = '$';
+			if (!isNaN(currentOrder.items[i].special)) {
+				cost += '0.00';
+			}
+			else {
+				total += currentOrder.items[i][location];
+				cost += currentOrder.items[i][location].toFixed(2);
+			}
+
 			var name = currentOrder.items[i].name;
 			console.log(cost + '\t| ' + name);
 		}
 
+		if (currentOrder.specials) {
+			console.log('------------------------------------------------');
+			for (var sp in currentOrder.specials) {
+				if (sp === 'last') continue;
+				var special = currentOrder.specials[sp];
+				console.log('$' + special.cost.toFixed(2) + '\t| ' + special.name);
+				total += special.cost;
+			}
+		}
+
 		console.log('------------------------------------------------');
-		console.log('Total\t| $' + total.toFixed(2));
+		console.log('Total'.bold.cyan + '\t| ' + '$'.cyan + total.toFixed(2).cyan);
 		console.log('------------------------------------------------');
 	}
 
