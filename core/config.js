@@ -20,6 +20,18 @@ var commands = require('./command.js'),
 				}
 				return ['name', name.trim()];
 			}
+		},
+		'location': {
+			description: 'Sets if you will see takeaway or eat in prices.',
+			method: function() {
+				if (process.argv.length > 5) {
+					help();
+				}
+				if (process.argv[4] !== 'in' && process.argv[4] !== 'away') {
+					help();
+				}
+				return ['location', process.argv[4]];
+			}
 		}
 	},
 

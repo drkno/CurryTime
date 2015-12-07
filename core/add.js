@@ -1,17 +1,19 @@
 var commands = require('./command.js'),
 	persistence = require('./persistence.js'),
+	specials = require('./specials.js'),
+	items = require('./curries.json'),
 	mode = -1,
 	options = {
-		'curry': {
-			description: 'Adds a curry to your order.',
+		'item': {
+			description: 'Adds an item to your order.',
 			method: function() {
 				mode = 0;
 			}
 		},
-		'drink': {
-			description: 'Adds a drink to your order.',
+		'special': {
+			description: 'Adds a special to your order.',
 			method: function() {
-				mode = 1;
+
 			}
 		}
 	},
@@ -36,22 +38,23 @@ console.log("\n\
 	process.exit(-2);
 },
 
-verifyCurry = function (curry) {
-	return false;
-},
-
-verifyDrink = function (drink) {
-	return true;
+verify = function (curry) {
+	if (!curry) return curry;
+	var name = curry.toLowerCase(),
+		i = items.items.find(function(element, index, array) {
+			return element.name.toLowerCase() === name;
+		});
+	return i;
 };
 
 exports.run = function() {
 	commands.run(options, process.argv, 1);
-	var item = process.argv[4];
-	switch (mode) {
-		case 0: if (!verifyCurry(item)) help(); break;
-		case 1: if (!verifyDrink(item)) help(); break;
-		default: help(); break;
+	process.argv.splice(0, 4);
+	var item = process.argv.join(' ');
+	if (item.length > 0 && !item.trim()) {
+		help();
 	}
+	item = item.trim();
 
 	var stage = persistence.getKey('stage');
 	if (!stage) {
@@ -61,6 +64,15 @@ exports.run = function() {
 		};
 	}
 
-	stage.items.push(item);
+	switch (mode) {
+		case 0: {
+			var add = verify(item);
+			if (!add) help();
+			stage.items.push(add);
+			break;
+		}
+		default: help(); break;
+	}
+
 	persistence.updateKey('stage', stage);
 };

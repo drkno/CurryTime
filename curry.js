@@ -1,4 +1,5 @@
-var commands = require('./core/command.js');
+var commands = require('./core/command.js'),
+	prototypes = require('./core/prototypes.js');
 
 var options = {
 	'show': {
