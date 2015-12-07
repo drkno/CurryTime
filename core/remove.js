@@ -24,11 +24,22 @@ console.log("\n\
 
 	var stage = persistence.getKey('stage');
 	for (var i = 0; i < stage.items.length; i++) {
+		var stren = '';
+		if (stage.items[i].strength) {
+			stren = ' ' + stage.items[i].strength + ' ';
+			switch(stage.items[i].strength) {
+				case 'Mild': stren = stren.green.inverse; break;
+				case 'Medium': stren = stren.yellow.inverse; break;
+				case 'Hot': stren = stren.red.inverse; break;
+			}
+			stren = ' ' + stren;
+		}
+
 		var sp = '';
 		if (!isNaN(stage.items[i].special)) {
 			sp = '[' + stage.specials[stage.items[i].special].name + '] ';
 		}
-		console.log('-\t' + sp.yellow + stage.items[i].name);
+		console.log('-\t' + sp.yellow + stage.items[i].name + stren);
 	}
 
 	process.exit(-2);

@@ -48,13 +48,18 @@ var lunchSpecial = function() {
 	}
 
 	if (!curry) {
-		curry = find(readlineSync.question('What curry do you want? ').trim());
+		var inp = readlineSync.question('What curry do you want? ').trim();
+		var s = strength.extract(inp);
+		curry = find(s[0]);
 		if (!curry || curry.ls !== 1 || curry.type.indexOf('Curry') < 0) {
 			console.log(figlet.textSync('WHAT?', 'Graffiti').red);
 			console.log("That curry isn't in the special or I've never heard of it before!");
 			process.exit(-3);
 		}
-		var stren = readlineSync.question('How strong should the curry be?');
+		var stren = s[1];
+		if (!s[1]) {
+			stren = readlineSync.question('How strong should the curry be? ');
+		}
 		curry.strength = strength.run(stren);
 		currentOrder.items.push(curry);
 	}
