@@ -1,0 +1,68 @@
+<div>
+
+	<div style="text-align: center">
+		
+		<div class="panel panel-default" style="max-height:250px; display: inline-block; width: 100%">
+			<div class="panel-heading">Curries</div>
+			<div class="panel-body">
+				<canvas class="chart chart-bar" data-data="curryValues" data-labels="curryLabels" data-legend="false" data-colours="curryColours" style="max-width:100%;"></canvas>
+			</div>
+		</div>
+		
+		<br />
+		
+		<div class="panel panel-default" style="max-width: 400px; display: inline-block;">
+			<div class="panel-heading">Spice</div>
+			<div class="panel-body">
+				<canvas class="chart chart-pie" data-data="spiceValues" data-labels="spiceLabels" data-legend="true" data-colours="spiceColours"></canvas>
+			</div>
+		</div>
+		
+		<div class="panel panel-default" style="max-width: 400px; display: inline-block;">
+			<div class="panel-heading">Paid</div>
+			<div class="panel-body">
+				<canvas class="chart chart-pie" data-data="paidValues" data-labels="paidLabels" data-legend="true" data-colours="paidColours"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<table id="tableOfCurries" class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Strength</th>
+				<th>Curry</th>
+				<th>Drink</th>
+				<th>Naan</th>
+				<th>Extras</th>
+				<th>Price</th>
+				<th>Paid</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-ng-repeat="order in orders">
+				<td>{{order.name}}</td>
+				<td>{{order.type}}</td>
+				<td>{{order.strength}}</td>
+				<td>{{order.curry}}</td>
+				<td>{{order.drink}}</td>
+				<td>{{order.naan}}</td>
+				<td>{{order.extras}}</td>
+				<td>{{order.price}}</td>
+				<td>{{order.paid}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+	<table>
+		<tr>
+			<th>Date</th>
+			<td>{{getDate()}}</td>
+		</tr>
+		<tr>
+			<th>Total</th>
+			<td>{{getTotal(orders)}}</td>
+		</tr>
+	</table>
+</div>
